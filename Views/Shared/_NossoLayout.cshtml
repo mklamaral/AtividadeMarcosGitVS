@@ -27,9 +27,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" asp-controller="Cliente" asp-action="CadastroCliente">Cliente</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" asp-controller="Produto" asp-action="CadastroProduto">Produto</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" asp-controller="Venda" asp-action="CadastroVenda">Venda</a></li>
+                    <li class="nav-item dropdown mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded dropdown-toggle" role="button" data-bs-toggle="dropdown">Clientes</a>
+                        <ul class="dropdown-menu"><li><a class="dropdown-item" asp-controller="Cliente" asp-action="CadastroCliente">Cadastrar Clientes</a></li><li><hr class="dropdown-divider"></li><li><a class="dropdown-item" asp-controller="Cliente" asp-action="BuscaCliente">Buscar Clientes</a></li></ul>
+                    </li>
                 </ul>
             </div>
         </div>

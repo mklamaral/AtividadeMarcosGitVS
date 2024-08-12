@@ -39,7 +39,7 @@ namespace AulaDeASPNet.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CadastroCliente([Bind("Id,Nome,RG,CPF,Usuario,Senha,CEP,UF,Cidade,Bairro,Rua,Numero,Complemento")] Cliente cliente)
+        public async Task<IActionResult> CadastroCliente([Bind("Id,Nome,CPF,Email,Telefone,Endereco")] Cliente cliente)
         {
             if (ModelState.IsValid)
             {
